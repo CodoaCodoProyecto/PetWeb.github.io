@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetWeb tu mejor amigo el perro</title>
+    <link rel="icon" href="estilo_img_proy/patita.ico">
+    <link rel="stylesheet" href="estilo_img_proy/estilosRegistrarMascota.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div id="header-logo">
+                <a href="indexpetweb.html">
+                    <img src="estilo_img_proy/logopetweb.png" alt="logotemporal">
+                </a>
+        </div>
+    
+        <nav id="nav-links">
+            <ul id="menu">
+                <li class="menu-item">
+                    <a href="indexpetweb.html" class="link roboto-medium">Inicio</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="link roboto-medium">Registrar Mascota</a>
+                </li>
+                <li class="menu-item">
+                    <a href="contacto.html" class="link roboto-medium">Contactanos</a>
+                </li>
+                <li class="menu-item">
+                    <a href="cupones-descuentos.html" class="link roboto-medium">Cupones de descuentos</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="menu-toggle" onclick="menuHamburguesa();"><i class="fa fa-bars"></i></div>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="roboto-black">Registro de tu cachorro</h2>
+
+            <form action="www.petweb.com" id="formregistro" method="get"> 
+                <div id="container__form">
+                    <div id="container__owner">
+                        <label for="nombre" class="roboto-medium">Nombre del dueño:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingresa tu nombre">
+                        <label for="apellido" class="roboto-medium">Apellido del dueño:</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Ingresa tu apellido">
+                        <label for="direccion" class="roboto-medium">Dirección:</label>
+                        <input type="text" name="direccion" id="direccion" placeholder="Ingresa tu dirección">
+                        <label for="telefono" class="roboto-medium">Teléfono:</label>
+                        <input type="tel" name="telefono" id="telefono" placeholder="Ingresa tu teléfono">
+                        <label for="email" class="roboto-medium">Email:</label>
+                        <input type="email" name="email" id="email" placeholder="Ingresa tu email">
+                    </div>
+                    <div id="container__pet">
+                        <label for="nombremascota" class="roboto-medium">Nombre de la mascota:</label>
+                        <input type="text" name="nombremascota" id="nombremascota" placeholder="Ingresa el nombre de tu mascota">
+                        <label for="edad" class="roboto-medium">Edad:</label>
+                        <input type="number" name="edad" id="edad" placeholder="Ingresa la edad de la mascota">
+                        <label for="raza" class="roboto-medium">Raza:</label>
+                        <input type="text" name="raza" id="raza" placeholder="Ingresa la raza de tu mascota">
+                        <label class="roboto-medium">Vacunas:</label>
+                        <div id="container__vacunas">
+                            <label class="roboto-medium">Si</label>
+                            <input type="radio" name="vacuna" class="input-vacuna" id="opcion1">
+                            <label class="roboto-medium">No</label>
+                            <input type="radio" name="vacuna" class="input-vacuna" id="opcion2" checked>
+                        </div>
+                        <label for="tipovacuna" class="roboto-medium">Indique cuales vacunas:</label>
+                        <textarea name="tipovacuna" id="tipovacuna" placeholder="Ingrese los tipos de vacunas"></textarea>
+                    </div>
+                </div>
+                <div id="container__button">
+                    <input type="submit" id="btn__enviar" class="roboto-black" value="Enviar">
+                </div>
+            </form>
+                
+        </section>
+    </main>
+
+    <footer class="footer">    
+        <section id="section__footer">
+            <div id="footer-logo">
+                <a href="indexpetweb.html">
+                    <img src="estilo_img_proy/logopetweb.png" alt="logotemporal">
+                </a>
+            </div>
+            <div id="footer-links">
+                <h4 class="roboto-medium"> Siguenos en nuestras redes </h4>
+                <ul id="icons-footer">
+                    <li>
+                        <a href="https://www.facebook.com" target="_blank">
+                            <img src="estilo_img_proy/facebook.png" alt="icono Facebook" title="Facebook">
+                        </a>
+                    </li>
+                        
+                    <li>
+                        <a href="https://wa.me/541171077985?text=Hola..." target="_blank" class="btn-wsp" > 
+                            <img src="estilo_img_proy/whatsapp.png" alt="icono whatsapp" title="whatsapp">
+                        </a>
+                    </li>
+                        
+                    <li>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="estilo_img_proy/instagram.png" alt="icono Instagram" title="Instagram">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <span id="line-separator"></span>
+        <p class="roboto-regular">&copy;2024 Derechos reservados PetWeb</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.roboto-black {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #region Encabezado */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #bac9a9;
+    padding: 0 1rem;
+}
+
+#header-logo img{ /* la imagen ocupara todo el ancho de su contenedor */
+    width: 100%;
+}
+
+#header-logo{ /* estableciendo el ancho del contenedor del logo */
+    width: 15%;
+}
+
+.menu-item{
+    display: inline; /* los items del menu se muestran en fila */
+    margin: 0 .5rem;
+}
+
+.link{
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #2e500d;
+}
+
+.link:hover{
+    color: rgb(59, 59, 255);
+}
+
+/***** MENU HAMBURGUESA *****/
+#menu-toggle {
+    display: none; /* Ocultar por defecto en pantallas grandes */
+}
+
+/* #endregion */
+
+
+/* #region Contenido principal */
+main{
+    padding: 1rem 2rem;
+    margin: 3rem 0;
+}
+
+h2{
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    color: rgba(27, 26, 26, 0.658);
+}
+
+#container__form{ /* para centrar el form */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#container__owner, #container__pet{
+    margin: 0 auto;
+}
+
+input{
+    display: block; /* para hacer que los elementos se ubiquen uno abajo del otro */
+    margin-bottom: 1.5rem;
+    width: 20rem;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+#container__vacunas{
+    margin-bottom: 1rem;
+}
+
+.input-vacuna{
+    display: inline;
+    height: 1rem;
+    width: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0;
+}
+
+textarea{
+    display: block;
+    width: 20rem;
+    height: 4.7rem;
+    font-size: 1rem;
+}
+
+#btn__enviar{
+    margin: 4rem auto;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color: rgb(87, 157, 248);
+    border-style: none;
+    border-radius: .5rem;
+    height: auto;
+    width: auto;
+}
+
+#btn__enviar:hover{
+    cursor: pointer;
+    background-color: rgb(59, 59, 255);
+}
+
+/* #endregion */
+
+
+/* #region Pie de pagina */
+footer{
+    background-color: #bac9a9;
+}
+
+#section__footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer-logo img{/* la imagen ocupara todo el ancho de su contenedor */
+    width: 100%;
+}
+
+#footer-logo{ /* estableciendo el ancho del contenedor de la imagen */
+    width: 15%;
+}
+
+h4{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #2e500d;
+}
+
+#icons-footer li{
+    display: inline;
+    margin: 0 1rem;
+}
+
+#icons-footer li a img{ /* cambio tamaño a los iconos de redes sociales */
+    width: 3rem;
+    height: 3rem;
+}
+
+#line-separator{
+    display: block;
+    width: 100%; /* ocupa todo el ancho del contenedor */
+    height: .0625rem; /* grosor de la linea (1px) */
+    background-color: rgb(68, 67, 67);
+}
+
+p{
+    padding: .5rem 0;
+    text-align: center;
+    color: #2e500d;
+}
+
+/* #endregion */
+
+
+
+
+/* pantallas de HASTA 560px */
+@media only screen and (max-width: 560px){
+    html{
+        font-size: 10px;
+    }
+
+    #menu-toggle {
+        display: block; /* Mostrar el icono de menu hamburguesa */
+        cursor: pointer;
+        font-size: 3rem;
+        margin-right: 1rem;
+        padding: .3rem 1rem;
+        color: white;
+        box-shadow: .25rem .25rem .25rem .25rem rgba(0,0,0,0.2);
+        border-radius: 1rem;
+    }
+    #menu{
+        position: absolute;
+        top: 7rem; /* comienza despues del header desde arriba (es como el eje y) */
+        left: 0; /* comienza pegado a la izquierda de la pantalla (es como el eje x) */
+        width: 100%;
+        background-color: #2e500d;
+        display: none; /* para ocultar el menu por defecto */
+    }
+    .menu-item{
+        display: block; /* para que los items del menu se muestren uno debajo del otro */
+        margin: 1rem;
+    }
+    .link{ /* cambio el color de fuente a los items (links) del menu */
+        color: #fff;
+    }
+    
+
+    header{ /* cambio la altura del header*/
+        height: 7rem;
+    }
+
+    #header-logo{
+        display: none; /* para que no aparezca el logo */
+    }
+
+    #container__form{
+        flex-direction: column; /* para que los div de owner y pet se muestren uno abajo del otro*/
+    }
+
+    #footer-logo{ /* estableciendo el ancho del contenedor de la imagen */
+        width: 20%;
+    }
+
+    #footer-links{ /* agrego margen derecho al contenedor de los iconos de las redes sociales */
+        margin-right: 1.5rem;
+    }
+
+    #icons-footer li a img{ /* cambio tamaño a los iconos de redes sociales */
+        width: 2rem;
+        height: 2rem;
+    }
+}
+
+/* pantallas DESDE 560px */
+@media only screen and (min-width: 560px){
+    html{ /* cambio el tamaño de la fuente del documento que tambien impactara sobre los componentes */
+        font-size: 12px;
+    }
+}
+
+/* pantallas DESDE 640px */
+@media only screen and (min-width: 640px){
+    html{
+        font-size: 14px;
+    }
+}
+
+/* pantallas DESDE 900px */
+@media only screen and (min-width: 900px){
+    html{
+        font-size: 16px;
+    }
+}

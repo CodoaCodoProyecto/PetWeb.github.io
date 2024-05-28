@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo_img_proy/estilos.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css">
+    <title>Formulario de Contacto</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+            <a href="#" class="container__logo"><img src="estilo_img_proy/logopetweb.png" alt="logopetweb"></a>
+            </div>
+        </header>
+
+        <section class="contact">
+            <div class="contact__box">
+                <h2 class="contact__title">Contáctanos</h2>
+                <p class="contact__description">Déjanos tu mensaje y con gusto te responderemos</p>
+            </div>
+            <form action="wwww.petweb.com" id="contact-form" class="contact__form" autocomplete="off">
+                <div class="contact__inputs">
+                    <label class="contact__label">Nombre</label>
+                    <input type="text" id="user-name" class="contact__input" required>
+                </div>
+                <div class="contact__inputs">
+                    <label class="contact__label">Correo electrónico</label>
+                    <input type="email" id="user-email" class="contact__input" required>
+                </div>
+                <div class="contact__inputs">
+                    <label class="contact__label">Mensaje</label>
+                    <textarea id="message" cols="30" rows="5" class="contact__textarea" required></textarea>
+                </div>
+                <button type="submit" class="contact__button">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Cuadro lateral -->
+        <aside class="info">
+            <div class="info__little-box"></div>
+            <h2 class="info__title">Información</h2>
+            <ul class="info__list">
+                <li class="info__list-item">
+                    <i class='bx bxs-envelope'></i>
+                    <p class="info__list-item-description">contacto@petcompany.com</p>
+                </li>
+                <li class="info__list-item">
+                    <i class='bx bxs-phone'></i>
+                    <p class="info__list-item-description">+54 3764 222222</p>
+                </li>
+                <li class="info__list-item">
+                    <i class='bx bxs-buildings'></i>
+                    <p class="info__list-item-description">3736 Marconi, Posadas, Misiones</p>
+                </li>
+                <li class="info__list-item">
+                    <i class='bx bxs-time'></i>
+                    <p class="info__list-item-description">08:00 - 17:00</p>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Box -->
+        <div class="container__box"></div>
+
+        <!-- Redes Sociales -->
+        <div class="container__rrss">
+            <a href="#" class="container__rrss-item">
+                <i class='bx bxl-facebook'></i>
+            </a>
+            <a href="#" class="container__rrss-item">
+                <i class='bx bxl-instagram-alt'></i>
+            </a>
+            <a href="#" class="container__rrss-item">
+                <i class='bx bxl-pinterest-alt'></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Librería EmailJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <!-- Script Librería iziToast -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
+    <!-- Script index.js -->
+    <script src="index.js"></script>
+</body>
+</html>

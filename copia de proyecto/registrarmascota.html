@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetWeb tu mejor amigo el perro</title>
+    <link rel="icon" href="estilo e imagenes proy/patita.ico">
+    <link rel="stylesheet" href="estilo e imagenes proy/estilos.css">
+    <script src="https://kit.fontawesome.com/b214eab9da.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <H1 id="titulo"><p align="center">Llego el momento no esperes mas!</p></H1>
+            <H3 id="subtitulo"><p align="center"><u><i>Registra a tu mejor amigo aquí</i></u></p></H3>
+
+            <a href="indexpetweb.html">Inicio</a>
+            <a href="registrarmascota.html">Registrar Mascota</a>
+            <a href="nuevo-turno.html">Nuevo turno</a>
+            <a href="cupones-descuentos.html">Cupones de descuentos</a>
+            <a href="Ayuda.html">Ayuda</a>
+        </nav>
+    </header>
+<main>
+    <section>
+        <H2 id="subtitulo"><b>Registro de tu cachorro</b></H2>
+        /*en metodo ...post por formulario, get por url*/
+        <form action="" id="formregistro" method="get"> 
+
+            <div>
+                <p><label for="nombre"> Nombre dueño: </label></p>
+                <input type="text" id="nombre" title="Ingresa aca tu nombre"> 
+            </div>
+
+            <div>
+            <p><label for="apellido"></label> Apellido dueño: 
+            <input type="text" id="apellido" > </label> </p>
+            </div>
+            
+            <div>
+            <p><label for="direccion"></label> Direccion: 
+            <input type="text" id="direccion" > </label> </p>
+            </div>
+
+            <div>
+            <p><label for="telefono"></label> Telefono: 
+            <input type="tel" id="telefono" > </label> </p>
+            </div>
+
+            <div>
+            <p><label for="email"></label> Email: 
+            <input type="email" id="email" > </label> </p>
+            </div>
+
+            <div>
+            <p><label for="nombremascota"> Nombre Mascota: 
+            <input type="text" id="nombremascota"> </label></p>
+            </div>
+
+            <div>
+            <p><label for="edad"> Edad: 
+            <input type="number" id="edad"> </label> </p>
+            </div>
+
+            <div>
+            <p><label for="raza"> Raza: 
+            <input type="text" id="raza"> </label> </p>
+            </div>
+
+            <div>
+            <p>Vacunas:</p>
+        
+            <select name="vacunas" id="vacunas" style="width: 200px;">
+            <option value="">Seleccione</option>
+            <option value="si">Si</option>
+            <option value="no">No</option>
+            </select>
+            </div>
+
+            <div>
+            <p><label for="vacunas"> Indique cuales vacunas: 
+            <textarea name="vacunas" id="vacunas" rows="5" cols="20" placeholder="Indique cuales..."></textarea> </label> </p>
+            </div>
+        
+            <button type="submit"> Enviar</button>
+            
+    </section>
+</main>
+<br> <br> <br> <br> 
+<footer>
+        <p align="center"> Siguenos en nuestras redes</p>
+        <p align="center"><i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i></p>
+        <b><p align="center">©2024 Derechos reservados PetWeb</p></b>
+</footer>
+</body>
+</html>

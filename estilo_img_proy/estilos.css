@@ -1,0 +1,481 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;900&display=swap');
+
+
+span
+{color:#f77f07;
+font-weight: bold;
+}
+
+#titulo
+{color:#697060;
+ font-size: 30px;
+}
+
+#subtitulo
+{color:#f77f07;}
+
+footer
+{background-color:#bac9a9;}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color:#f3ffcf;
+    font-size: 2rem;
+    min-height: 100%;
+}
+
+.texto_box {
+    position: relative;
+    top: 175px;
+    left: 10px;
+    width: 450px;
+    height: 30px;
+    background-color: var(#f2d680);
+}
+
+.contenedor >* { 
+    box-shadow: -1px 1px 7px 0px black (0, 0, 0, 0.75);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.header{
+    display:flex;
+    background-color: #bac9a9; 
+    justify-content: space-between;
+    align-items: center;
+    height: 160px;
+    padding: 5px 5%;
+    text-align:center; 
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+.header .logo {
+    cursor: pointer;
+}
+
+.header .logo img{
+    height: 125px;
+    width: auto;
+    transition: all 0.3seg;
+}
+
+.header .logo img:hover {
+    transform: scale(1.9);
+}
+
+.header .nav-links {
+    list-style: none;
+    
+}
+
+.header .nav-links {
+    display: inline-block;
+    padding: 0 40px;
+    
+}
+
+.header .nav-links :hover {
+    transform: scale(1.1);
+}
+
+.header .boton span {
+    font-weight: 300;
+    color:#697060;
+    padding: 2px 3px;
+    background:beige;
+    border:none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.header .boton span:hover {
+    background-color:honeydew;
+    color:black;
+    transform: scale(1.1);
+}
+
+main{
+    grid-area: main;
+    background-color:beige;
+}
+
+.main img{
+    object-fit: fill;
+    position: relative;
+    top: 175px;
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.main{
+    display: grid;
+    max-width:max-content;
+    padding: 1rem;
+    margin: 0;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows:  2fr 2fr 2fr;
+    grid-template-areas: "section" "section" "section"
+                         "main"    "main"    "main" 
+                         "main"    "main"    "main";
+    grid-gap: 1rem; 
+}
+
+.section{
+    grid-row:1/5;
+}
+
+.link-footer-titulo{
+    font-weight: bold;
+    padding: 15px 0;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+#line-separator{
+    display: block;
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 1px; /* Grosor de la línea */
+    background-color:#f77f07; /* Color de la línea */
+    text-align:center; 
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+.icons-footer{
+    margin-bottom: 10px;
+}
+
+.icons-footer li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.icons-footer li a{
+    display: flex; /* Por defecto tiene display: inline; Lo pongo en flex para poder usar la propiedad height, sino no se puede*/
+    height: 50px;
+    width: 50px;
+}
+
+.cupon1{
+    display: block;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    }
+ 
+/* Formulario de contacto */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+/* Variables CSS */
+:root {
+    --nude: #f3ffcf;
+    --black: #1b1b1b;
+    --brown: #4d3600;
+    --light-green: #bac9a9;
+    --orange: #f2d680;
+    --font: 'Raleway', sans-serif;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+/* Body */ 
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--nude);
+    overflow-x: hidden;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header */
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 30px;
+}
+
+.container__logo img {
+    width: 250px;
+    height: 250px;
+}
+
+.container__box {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: var(--light-green);
+    z-index: -1;
+}
+
+.container__rrss {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container__rrss-item {
+    color: var(--black);
+    font-size: 0.8em;
+    transition: 0.3s;
+}
+
+.container__rrss-item:hover {
+    color: var(--light-green);
+}
+
+/* Section */
+.contact {
+    position: relative;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 300px;
+}
+
+.contact__box {
+    text-align: left;
+}
+
+.contact__title {
+    font-size: 3em;
+    color: var(--black);
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.contact__description {
+    font-size: 1.2em;
+    color: var(--black);
+    margin-bottom: 30px;
+}
+
+.contact__form {
+    width: 90%;
+}
+
+.contact__inputs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.contact__label {
+    font-size: 1em;
+    color: var(--black);
+    margin-bottom: 4px;
+}
+
+.contact__input,
+.contact__textarea {
+    padding: 10px;
+    border-radius: 0px;
+    outline: none;
+    background-color: #bac9a9;
+    border: 1px solid var(--black);
+    resize: none;
+}
+
+.contact__button {
+    width: 100%;
+    border-radius: 0px;
+    border: none;
+    padding: 15px 20px;
+    background-color: var(--light-green);
+    color: var(#697060);
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact__button:hover {
+    background-color: var(--dark-green);
+}
+
+/* Tarjeta desplegable */
+.info {
+    background-color: var(--orange);
+    width: 430px;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 100px;
+    gap: 45px;
+}
+
+.info__little-box {
+    position: absolute;
+    top: -20px;
+    left: -40px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--light-green);
+}
+
+.info__title {
+    color: var(--black);
+    font-size: 2em;
+}
+
+.info__list {
+    list-style: none;
+}
+
+.info__list-item {
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.bx {
+    font-size: 2em;
+}
+
+.info__list-item-description {
+    font-size: 1em;
+}
+
+/* Breakpoints */
+
+/* -- Pantallas Largas -- */
+@media only screen and (max-width: 1200px) {
+    .contact {
+        max-width: 500px;
+        left: 150px;
+    }
+
+    .info {
+        width: 500px;
+        padding-left: 70px;
+    }
+}
+
+/* -- Laptops -- */
+@media only screen and (max-width: 992px) {
+    .contact {
+        max-width: 400px;
+        left: 100px;
+    }
+
+    .info {
+        width: 400px;
+    }
+}
+
+/* -- Tablets -- */
+@media only screen and (max-width: 768px) {
+    .container {
+        justify-content: center;
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .container__box {
+        width: 100px;
+    }
+
+    .contact {
+        max-width: 400px;
+        left: 0;
+        padding-top: 40px;
+    }
+
+    .info {
+        padding: 40px;
+        left: 0;
+    }
+}
+
+/* -- Celulares -- */
+@media only screen and (max-width: 400px) {
+    header {
+        padding: 20px;
+    }
+
+    .container__box {
+        display: none;
+    }
+
+    .container__rrss {
+        top: 95%;
+        left: 130px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        z-index: 1;
+        margin-top: 30px;
+    }
+
+    .container__rrss-item {
+        color: var(--green);
+    }
+
+    .contact {
+        max-width: 300px;
+        padding-top: 100px;
+    }
+
+    .contact__title {
+        font-size: 2em;
+    }
+
+    .contact__description {
+        font-size: 1em;
+    }
+
+    .info__little-box {
+        top: -20px;
+        left: 0;
+    }
+}
